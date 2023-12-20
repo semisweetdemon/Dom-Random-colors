@@ -20,46 +20,62 @@
 // 	}, 1000);
 // });
 
-const box = document.querySelectorAll('.box');
-const active = document.querySelector('.active');
-const clear = document.querySelector('.clear');
+// const box = document.querySelectorAll('.box');
+// const active = document.querySelector('.active');
+// const clear = document.querySelector('.clear');
 
-function color() {
-	num = '#';
-	for (let i = 0; i < 6; i++) {
-		num += Math.floor(Math.random() * 10);
-	}
-	return num;
-}
+// function color() {
+// 	num = '#';
+// 	for (let i = 0; i < 6; i++) {
+// 		num += Math.floor(Math.random() * 10);
+// 	}
+// 	return num;
+// }
+
+// setInterval(() => {
+// 	box.forEach((el) => {
+// 		el.style.background = color();
+// 		el.style.boxShadow = `0 0 30px ${color()}`;
+// 	});
+// }, 1000);
+
+// box.forEach((el) => {
+// 	el.addEventListener('mouseover', () => {
+// 		el.style.background = color();
+// 		el.style.boxShadow = `0 0 30px ${color()}`;
+// 	});
+// 	el.addEventListener('mouseout', () => {
+// 		el.style.background = '';
+// 		el.style.boxShadow = '';
+// 	});
+// });
+
+// active.addEventListener('click', () => {
+// 	box.forEach((el) => {
+// 		el.style.background = color();
+// 		el.style.boxShadow = `0 0 30px ${color()}`;
+// 	});
+// });
+
+// clear.addEventListener('click', () => {
+// 	box.forEach((el) => {
+// 		el.style.background = '';
+// 		el.style.boxShadow = '';
+// 	});
+// });
+
+const circle = document.querySelectorAll('.circle');
+
+let color = 'green';
+
+setInterval(function () {
+	color = color === 'red' ? 'green' : 'red';
+}, 4000);
 
 setInterval(() => {
-	box.forEach((el) => {
-		el.style.background = color();
-		el.style.boxShadow = `0 0 30px ${color()}`;
-	});
-}, 1000);
+	circle.forEach((el) => (el.style.background = ''));
+}, 2000);
 
-box.forEach((el) => {
-	el.addEventListener('mouseover', () => {
-		el.style.background = color();
-		el.style.boxShadow = `0 0 30px ${color()}`;
-	});
-	el.addEventListener('mouseout', () => {
-		el.style.background = '';
-		el.style.boxShadow = '';
-	});
-});
-
-active.addEventListener('click', () => {
-	box.forEach((el) => {
-		el.style.background = color();
-		el.style.boxShadow = `0 0 30px ${color()}`;
-	});
-});
-
-clear.addEventListener('click', () => {
-	box.forEach((el) => {
-		el.style.background = '';
-		el.style.boxShadow = '';
-	});
-});
+setInterval(() => {
+	circle.forEach((el) => (el.style.background = color));
+}, 4000);

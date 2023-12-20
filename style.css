@@ -3,10 +3,10 @@
 } */
 
 body {
-	background: black;
+	background: white;
 }
 
-.boxes {
+/* .boxes {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
@@ -40,4 +40,19 @@ body {
 .clear {
 	border: 2px solid red;
 	color: red;
+} */
+
+.svetofor {
+	margin-top: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+}
+
+.circle {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background: yellow;
 }
