@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Open-Sans', 'Poppins', 'Montserrat', 'Podkova', sans-serif;
+}
+
+/* 
+.hero {
+} */
+
+.hero__slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider__images {
+	width: 100%;
+	height: 100vh;
+	background: url(/images/krystian-tambur-k7rZ8wTfABA-unsplash.jpg) no-repeat center/ cover;
+	/* display: flex; */
+	/* flex-direction: row; */
+}
+
+/* .slider__images img {
+	width: 100%;
+	height: 99vh;
+	object-fit: cover;
+	transition: 1s;
+}
+
+.slider__one {
+	display: none;
+	transform: scale(0);
+}
+
+.slider__two {
+	display: none;
+	transform: scale(0);
+}
+
+.slider__three {
+	display: none;
+	transform: scale(0);
+} */
